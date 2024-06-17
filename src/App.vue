@@ -12,7 +12,7 @@
       <RouterView />
     </main>
     <footer class="footer">
-      <p>© 2024 CowryRise Internship</p>
+      <p>© 2024 Cowrywise Internship</p>
     </footer>
   </div>
 </template>
