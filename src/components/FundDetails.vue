@@ -131,10 +131,12 @@ h2 {
 .info-label {
   font-weight: bold;
   color: #555;
+  white-space: nowrap;
 }
 
 .info-value {
   color: #333;
+  word-wrap: break-word;
 }
 
 .performance-list, .composition-list {
@@ -156,5 +158,55 @@ h2 {
 
 .loading p {
   font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+  .fund-details {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  .fund-info {
+    grid-template-columns: auto 1fr;
+    row-gap: 5px;
+    column-gap: 10px;
+  }
+
+  .info-label, .info-value {
+    font-size: 0.9em;
+  }
+
+  .performance-list li, .composition-list li {
+    padding: 8px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .fund-details {
+    max-width: 1000px;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  .info-label, .info-value {
+    font-size: 1.2em;
+  }
+
+  .performance-list li, .composition-list li {
+    padding: 15px;
+  }
 }
 </style>
